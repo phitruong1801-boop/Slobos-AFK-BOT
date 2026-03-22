@@ -23,7 +23,7 @@ function setupLeaveRejoin(bot, createBot) {
     }
 
     function cleanup() {
-        stopped = true
+        stopped = false
         if (leaveTimer) clearTimeout(leaveTimer)
         if (jumpTimer) clearTimeout(jumpTimer)
         if (jumpOffTimer) clearTimeout(jumpOffTimer)
